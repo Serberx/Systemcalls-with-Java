@@ -86,6 +86,8 @@ public class CreateDateViewAndUpdate{
         tf4.setDisable(true);
 
         Stage stage1 = new Stage();
+        stage1.setWidth(320);
+        stage1.setHeight(290);
 
         VBox root2 = new VBox(labelDate,
                               tf1,
@@ -99,11 +101,12 @@ public class CreateDateViewAndUpdate{
         HBox root1 = new HBox(root2,
                               btn1);
         root1.setAlignment(Pos.BOTTOM_LEFT);
+        root1.setPadding(new Insets(0,0,10,0));
         root2.setPadding(new Insets(5,0,0,10));
 
         btn1.setPrefSize(100,
                          20);
-        //        btn1.setAlignment(Pos.TOP_CENTER);
+                btn1.setAlignment(Pos.TOP_CENTER);
 
 
         //        root2.getChildren().add(labelDate);

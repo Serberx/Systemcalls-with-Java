@@ -319,7 +319,7 @@ public class DateTimeCall{
 
     public String getGeoData(){
         if(this.geoData != null){
-            return this.geoData;
+            return this.geoData.replace('"', ' ');
         }else{
             throw new DateTimeCallException("Null value getGeoData!");
         }
